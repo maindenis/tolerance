@@ -149,6 +149,36 @@ $(document).ready(function() {
     });
 
     // ------------
+    const team_slider = new Swiper(".team_slider", {
+    loop: true,
+    slidesPerView: "auto",
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: ".team_slider_pag",
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.team_sl_next',
+        prevEl: '.team_sl_prev',
+    },
+    on: {
+        init: function () {
+            $(".team_slider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+            $(".team_slider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+            $(".team_slider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+            $(".team_slider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+        },
+        slideChange: function () {
+            $(".team_slider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+            $(".team_slider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+            $(".team_slider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+            $(".team_slider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+        }
+      }
+    });
 
     $(".nav li").on("mouseover", function() {
         index = $(this).attr("data-itemindex");
