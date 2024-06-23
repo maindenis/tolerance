@@ -3692,6 +3692,141 @@ input[type=number] {
 
 /*-- /Section 13 - Main Page --*/
 
+/*-- Section 15 - Main Page --*/
+
+.blue_box_4 {
+    background: #EAF4FF;
+    border-radius: 12px; 
+    margin: 0 10px;
+    padding: 36px 0 47px 0;
+}
+
+.articles_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles_thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding: 13px 0 36px 0;
+}
+
+.article_thumb {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px 20px 14px 20px;
+    background: #FFF;
+    border-radius: 24px;
+}
+
+.article_thumb_multiple {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+}
+
+.article_thumb_2 {
+    margin: 10px 0;
+    border: 1px solid #DDEBFD;
+    border-radius: 24px;
+    background: transparent;
+    padding: 1px 20px 14px 20px;
+}
+
+.article_thumb .img_box {
+    display: block;
+    height: 224px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.article_thumb .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.article_thumb_content {
+
+}
+
+.article_thumb_tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -7px 8px -7px;
+}
+
+.article_thumb_tags > div {
+    padding: 3px 7px;
+}
+
+.article_thumb_tags p {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #657898;
+}
+
+.article_thumb_tags p img {
+    margin-right: 7px;
+}
+
+.article_thumb_title {
+    padding-bottom: 10px;
+    min-height: 70px;
+}
+
+.article_thumb_title a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 124%;
+    color: #0E2141;
+}
+
+.article_thumb_descript {
+    min-height: 67px;
+}
+
+.article_thumb_descript p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #657898;
+}
+
+.more_link_wrapp {
+
+}
+
+.more_link_2 {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0077BC;
+}
+
+.more_link_2 svg {
+    margin-right: 7px;
+}
+
+.articles_box_btn {
+    text-align: center;
+}
+
+
+/*-- /Section 15 - Main Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
