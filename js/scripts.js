@@ -6,7 +6,6 @@ function getSubMenuParams() {
     $(".sub_menu").css({
         "height" : $(window).height() - topCoord + "px"
     });
-    console.log($(document).scrollTop() );
 }
 
 var w = window,
@@ -15,6 +14,7 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 var topCoord;
+
 $(window).resize(function() {
     getSubMenuParams();
 });
@@ -179,6 +179,84 @@ $(document).ready(function() {
         }
       }
     });
+
+    // ------------
+
+    // var cardsSlider = new Swiper(".cardsSlider", {
+    //   effect: "cards",
+    //   grabCursor: true,
+    //     pagination: {
+    //         el: ".cardsSlider_pag",
+    //         clickable: true
+    //     },
+    //     on: {
+    //     init: function () {
+    //         $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+    //     },
+    //     slideChange: function () {
+    //         $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+    //         $(".cardsSlider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+    //     }
+    //   }
+    // });
+
+    // -------------
+
+    const testimonialSlider = new Swiper('.testimonialSlider', {
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true
+        },
+        // autoplay: {
+        //     delay: 2000, // время задержки между слайдами
+        //     disableOnInteraction: false, // слайды будут продолжать автоматически переключаться при нажатии на кнопки навигации
+        // },
+      navigation: {
+        nextEl: '.test_slide_next',
+        prevEl: '.test_slide_prev',
+      }
+    });
+
+    // ---------------
+
+    // var verticalScroll = new Swiper("#verticalScroll", {
+    //   direction: "vertical",
+    //   slidesPerView: "auto",
+    //   freeMode: true,
+    //   scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //   },
+    //   mousewheel: true,
+    // });
+    // var verticalScroll = new Swiper("#verticalScroll", {
+    //     direction: 'vertical',
+    //     slidesPerView: "auto",
+    //     mousewheelControl: true,
+    //     freeMode: true,
+    //     mousewheel: true
+    // });
+
+
+    // ---------------
+
+    const videoSlider2 = new Swiper(".videoSlider2", {
+        loop: true,
+        // slidesPerView: 4,
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.videos_next',
+            prevEl: '.videos_prev',
+        }
+    });
+
+    // ---------------
 
     $(".nav li").on("mouseover", function() {
         index = $(this).attr("data-itemindex");
