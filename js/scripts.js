@@ -640,4 +640,19 @@ $(document).ready(function() {
           }
       });
 
+      // -------------
+
+    $(".dr_title").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".dr_parent");
+      sl = parent.find(".dr_content");
+      if(sl.is(":hidden")) {
+        parent.addClass("active");
+        sl.slideDown(300);
+      } else {               
+        sl.slideUp(300);
+        parent.removeClass("active");
+      }
+    });
+
 });
