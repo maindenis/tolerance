@@ -3874,6 +3874,10 @@ input[type=number] {
 
 /*-- Section 17 - Main Page --*/
 
+.sect_17 {
+    padding-top: 57px;
+}
+
 .faq_wrapp {
     max-width: 900px;
     margin: 43px auto 29px auto;
@@ -4042,8 +4046,292 @@ input[type=number] {
     right: 5%;
 }
 
-
 /*-- /Section 17 - Main Page --*/
+
+/*-- Section 18 - Main Page --*/
+
+.sect_18 {
+
+}
+
+.blue_box_form {
+    margin: 115px 0 50px 0;
+    mix-blend-mode: soft-light;
+    border-radius: 12px;
+    background-image: url(img/callback_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.blue_box_form > .row {
+    padding: 15px;
+}
+
+.callback_templ {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.callback_templ > div:nth-child(1) {
+    width: 455px;
+    padding: 10px 10px 10px 0;
+}
+
+.callback_templ > div:nth-child(2) {
+    width: calc(100% - 455px);
+    padding: 10px 0 10px 10px;
+}
+
+.callback_person_wrapp {
+    height: 450px;
+    position: relative;
+    top: -16px;
+}
+
+.callback_person {
+    display: flex;
+    align-items: flex-end;
+    max-width: 390px;
+    height: 530px;
+    position: relative;
+    top: -87px;
+}
+
+.callback_person:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    max-height: 488px;
+    background: #FBDDD5;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.callback_person img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+.callback_person_text {
+    width: calc(100% - 30px);
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    background: #FFF;
+    box-shadow: 0 0 40px rgba(0, 74, 152, .05);
+    border-radius: 16px;
+    padding: 15px 10px 14px 70px;
+    z-index: 3;
+}
+
+.callback_person_text svg {
+    position: absolute;
+    top: 16xp;
+    left: 20px;
+}
+
+.callback_person_text h3 {
+    padding-bottom: 3px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 124%;
+    color: #0E2141;
+}
+
+.callback_person_text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #657898;
+}
+
+.callback_form {
+    padding: 44px 0 10px 0;
+}
+
+.callback_form_header {
+
+}
+
+.callback_form_header h2 {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 124%;
+    color: #FFF;
+}
+
+.callback_form_header p {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFF;
+}
+
+.callback_form_two_cols {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px 0;
+}
+
+.callback_form_two_cols > div:nth-child(1) {
+    width: 50%;
+    padding: 9px 9px 9px 0;
+}
+
+.callback_form_two_cols > div:nth-child(2) {
+    width: 50%;
+    padding: 9px 0 9px 9px;
+}
+
+.input_wrapp_3 {
+
+}
+
+.input_wrapp_3 input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding: 0 15px;
+    background: #FFF;
+    border: 1px solid #DDEBFD;
+    border-radius: 30px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 54px;
+    color: #657898;
+}
+
+.tel_input_wrapp {
+    position: relative;
+}
+
+.tel_code {
+    width: 0;
+    height: 0;
+    position: absolute;
+    height: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.tel_input {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background: #FFF;
+    border: 1px solid #DDEBFD;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.tel_input > div:nth-child(1) {
+    width: 75px;
+    border-right: 1px solid #DDEBFD;
+    position: relative;
+}
+
+.tel_input > div:nth-child(2) {
+    width: calc(100% - 75px);
+}
+
+.tel_input input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding: 0 10px;
+    background: #FFF;
+    border: none;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 54px;
+    color: #657898;
+}
+
+.tel_code_title {
+    cursor: pointer;
+}
+
+.tel_arrow_2 {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.tel_flag {
+    height: 54px;
+}
+
+.tel_flag img {
+    display: block;
+    max-width: 24px;
+    position: relative;
+    top: 18px;
+    left: 16px;
+}
+
+.input_wrapp_3 {
+    margin: 8px 0;
+}
+
+.input_wrapp_3 textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 13px 15px;
+    background: #FFF;
+    border: 1px solid #DDEBFD;
+    border-radius: 24px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #657898;
+}
+
+.callback_submit {
+    margin: 8px 0;
+}
+
+.callback_submit .orange_pill_2 {
+    width: 100%;
+}
+
+.callback_text {
+    max-width: 256px;
+}
+
+.callback_text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.callback_text p a {
+    color: #0077BC;
+}
+
+
+
+
+/*-- /Section 18 - Main Page --*/
 
 
 /*-------------------------------------------*/
