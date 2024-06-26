@@ -333,6 +333,38 @@ $(document).ready(function() {
 
     // ------------
 
-    
+    $(".dr_tels_title").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".dr_tels");
+        sl = parent.find(".dr_tels_list");
+        if(sl.is(":hidden")) {
+            sl.slideDown(300);
+        } else {
+            sl.slideUp(300);
+        }
+    });
+
+    $(document).on("mouseup", function(e) {
+      hide_element = $(".dr_tels_list");
+      if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+        hide_element.slideUp(300);
+      }
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27) {
+          $(".dr_tels_list").slideUp(300);
+        }
+    });
+
+    $(".dr_tels_list > div").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".dr_tels");
+        value = $(this).html();
+        parent.find(".dr_tels_title_templ").html(value);
+        sl = parent.find(".dr_tels_list");
+        sl.slideUp(300);
+    });
 
 });
