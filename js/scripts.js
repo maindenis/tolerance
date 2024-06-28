@@ -205,6 +205,45 @@ $(document).ready(function() {
     //   }
     // });
 
+    var cardsSlider = new Swiper(".cardsSlider", {
+        grabCursor: true,
+        effect: "creative",
+        loop: true,
+        creativeEffect: {
+        prev: {
+        shadow: true,
+            translate: [0, 0, 0],
+        },
+        next: {
+            translate: ["100%", 0, 0],
+        },
+        },
+        pagination: {
+            el: ".cardsSlider_pag",
+            clickable: true
+        },
+        on: {
+            init: function () {
+                countSlides = $(".cardsSlider .card_slide_2").length;
+                $("#cardsSliderCount").text(countSlides);
+                currentSlide = parseInt($(".cardsSlider .swiper-slide-active").attr("data-swiper-slide-index")) + 1;
+                $("#cardsSliderCurrent").text(currentSlide);
+                $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+            },
+            slideChange: function () {
+                currentSlide = parseInt($(".cardsSlider .swiper-slide-active").attr("data-swiper-slide-index")) + 1;
+                $("#cardsSliderCurrent").text(currentSlide);
+                $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("prevBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet").removeClass("nextBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                $(".cardsSlider_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+            }
+        }
+    });
+
     // -------------
 
     const testimonialSlider = new Swiper('.testimonialSlider', {
