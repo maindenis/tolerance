@@ -11,86 +11,188 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 	<title></title>
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 	<div class="wrapper">
 	<!-- Header -->		
 	<header id="header">
-		<div class="header_top">
-			<div class="left">
-				<div class="inlines">
-					<div>
-						<div class="white_box">
+		<div class="header_top_wrapp" id="headerTop">
+			<div class="header_top_scroll">
+				<div class="header_top">
+					<div class="left">
+						<div class="inlines">
 							<div>
-								<ul class="socilas">
-									<li><a href="#"><img src="img/wp.svg" alt="" /></a></li>
-									<li><a href="#"><img src="img/vb.svg" alt="" /></a></li>
-									<li><a href="#"><img src="img/tg.svg" alt="" /></a></li>
-								</ul>
-							</div>
-							<div>
-								<a class="tel_link" href="tel:+905374828423"><span>TR</span> +90 (537) 482-84-23</a>
-							</div>
-						</div>
-					</div>
-					<div>
-						<ul class="tels_links">
-							<li><a href="tel:+77775523"><span>KZ</span> +7 (777) 55-23</a></li>
-							<li><a href="tel:+380567324567"><span>UA</span> +38 (056) 732-45-67</a></li>
-							<li><a href="tel:+74957775721"><span>RU</span> +7 (495) 777-57-21</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="right">
-				<div class="inlines_3">
-					<div>
-						<div class="custom_select">
-							<input type="hidden" value="Русский">
-							<div class="custom_select_title">
-								<div class="p_val">
-									<img src="img/flags/ru.svg" alt="" />
-									RU
+								<div class="white_box">
+									<div>
+										<ul class="socilas">
+											<li><a href="#"><img src="img/wp.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/vb.svg" alt="" /></a></li>
+											<li><a href="#"><img src="img/tg.svg" alt="" /></a></li>
+										</ul>
+									</div>
+									<div>
+										<a class="tel_link" href="tel:+905374828423"><span>TR</span> +90 (537) 482-84-23</a>
+									</div>
 								</div>
 							</div>
-							<div class="custom_dr">
-								<ul class="custom_select_list checkout_list">
-									<li data-option-val="RU"></li>
-									<li data-option-val="Опция 2"></li>
-									<li data-option-val="Опция 3" class=""></li>
-									<li data-option-val="Опция 4" class="active"></li>
+							<div>
+								<ul class="tels_links">
+									<li><a href="tel:+77775523"><span>KZ</span> +7 (777) 55-23</a></li>
+									<li><a href="tel:+380567324567"><span>UA</span> +38 (056) 732-45-67</a></li>
+									<li><a href="tel:+74957775721"><span>RU</span> +7 (495) 777-57-21</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div>
-						<div class="custom_select">
-							<input type="hidden" value="Русский">
-							<div class="custom_select_title">
-								<p class="p_val">EUR</p>
+					<div class="right">
+						<div class="inlines_3">
+							<div>
+								<div class="custom_select">
+									<input type="hidden" value="Русский">
+									<div class="custom_select_title">
+										<div class="p_val">
+											<img src="img/flags/ru.svg" alt="" />
+											<span>RU</span>
+										</div>
+									</div>
+									<div class="custom_dr lang_dr">
+										<div class="custom_select_list checkout_list">
+											<div class="langs_thumbs">
+												<div>
+													<label class="lang_thumb" data-value="EN">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/gbr.svg" alt="" />English</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="RU">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/ru.svg" alt="" />Русский</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="GR">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/deuth.svg" alt="" />Deutsch</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="FR">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/fr.svg" alt="" />Français</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="ND">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/ned.svg" alt="" />Nederlands</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="فارس" >
+														<input type="radio" name="lang"/>
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/i_2.svg" alt="" />فارسی</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="لعرب">
+														<input type="radio" name="lang"/>
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/i_3.svg" alt="" /> العربية</p>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="custom_dr">
-								<ul class="custom_select_list checkout_list">
-									<li data-option-val="EUR"></li>
-									<li data-option-val="Опция 2"></li>
-									<li data-option-val="Опция 3" class=""></li>
-									<li data-option-val="Опция 4" class="active"></li>
-								</ul>
+							<div>
+								<div class="custom_select">
+									<div class="custom_select_title">
+										<p class="p_val"><span>EUR</span></p>
+									</div>
+									<div class="custom_dr valute_dr">
+										<div class="tels_codes checkout_list">
+											<div>
+												<label class="tel_radio" data-value="EUR" >
+													<input name="tel_code" type="radio" value="+7991" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/eur.svg" alt="" />EUR</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="USD" >
+													<input name="tel_code" type="radio" value="+7992" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/usa.svg" alt="" />USD</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="TRY" >
+													<input name="tel_code" type="radio" value="+7993" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/try.svg" alt="" />TRY</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="GBP" >
+													<input name="tel_code" type="radio" value="+7994" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/gbr.svg" alt="" />GBP</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="IRR" >
+													<input name="tel_code" type="radio" value="+7995" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/irr.svg" alt="" />IRR</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="UAH" >
+													<input name="tel_code" type="radio" value="+7996" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/uah.svg" alt="" />UAH</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="AED" >
+													<input name="tel_code" type="radio" value="+7997" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/aed.svg" alt="" />AED</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="KZT" >
+													<input name="tel_code" type="radio" value="+7998" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/kzt.svg" alt="" />KZT</p>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div>
-						<a href="#" class="like">
-							<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.99996C6.50049 0.252442 3.99481 -0.287622 2.11602 1.31258C0.237233 2.91278 -0.0272741 5.58823 1.44815 7.4808C2.67486 9.05433 6.38733 12.373 7.60407 13.4472C7.7402 13.5674 7.80827 13.6274 7.88766 13.6511C7.95695 13.6717 8.03277 13.6717 8.10207 13.6511C8.18146 13.6274 8.24952 13.5674 8.38565 13.4472C9.6024 12.373 13.3149 9.05433 14.5416 7.4808C16.017 5.58823 15.7848 2.89595 13.8737 1.31258C11.9626 -0.27079 9.49951 0.252442 8 1.99996Z" fill="#EA4949"/>
-							</svg>
-							<span>10</span>
-						</a>
-					</div>
-					<div>
-						<div class="btn_wrapp">
-							<a href="#" class="orange_pill">Свяжитесь со мной</a>
+							<div>
+								<a href="#" class="like">
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.99996C6.50049 0.252442 3.99481 -0.287622 2.11602 1.31258C0.237233 2.91278 -0.0272741 5.58823 1.44815 7.4808C2.67486 9.05433 6.38733 12.373 7.60407 13.4472C7.7402 13.5674 7.80827 13.6274 7.88766 13.6511C7.95695 13.6717 8.03277 13.6717 8.10207 13.6511C8.18146 13.6274 8.24952 13.5674 8.38565 13.4472C9.6024 12.373 13.3149 9.05433 14.5416 7.4808C16.017 5.58823 15.7848 2.89595 13.8737 1.31258C11.9626 -0.27079 9.49951 0.252442 8 1.99996Z" fill="#EA4949"/>
+									</svg>
+									<span>10</span>
+								</a>
+							</div>
+							<div>
+								<div class="btn_wrapp">
+									<a href="#" class="orange_pill">Свяжитесь со мной</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -165,162 +267,256 @@
 				</ul>
 			</div>
 		</div>
-		<div class="header_nav" id="nav">
-			<div class="left">
-				<ul class="nav">
-					<li>
-						<a href="#">Недвижимость</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li data-itemindex = "2">
-						<a href="#">О компании</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Услуги</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Отзывы</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Гид покупателя</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">ВНЖ в Турции</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Гражданство Турции</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Блог</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-						<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</li>
-				</ul>
-			</div>
-			<div class="right">
-				<div class="search_form">
-					<div>
-						<input type="text" placeholder="Поиск по сайту" />
+		<div class="header_nav_wrapp" id="scrollCoord">
+			<div id="nav">
+				<div class="header_nav">
+					<div class="nav_log_col">
+						<a href="#" class="logo_nav">
+							<img src="img/nav_logo.svg" alt="" />
+						</a>
 					</div>
-					<div>
-						<button type="submit" class="search_btn">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M10.115 10.0941L13 13M11.6667 6.33333C11.6667 9.27885 9.27885 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27885 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27885 1 11.6667 3.38781 11.6667 6.33333Z" stroke="#657898" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
-							</svg>
-						</button>
+					<div class="left">
+						<ul class="nav">
+							<li>
+								<a href="#">Недвижимость</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li data-itemindex = "2">
+								<a href="#">О компании</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<!-- <div class="sub_menu" data-subindex = "2">
+									<div class="row">
+										<div class="menu_thumbs">
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>О компании</p>
+													<i class="arrow orange"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_01.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Почему мы</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_02.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>История и достижения</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_03.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Наша команда</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_04.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Ценности и принципы</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_05.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Документы и Сертификаты</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_06.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Дипломы и награды</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_07.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Пресса о нас</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_08.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Благотворительность</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_09.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Партнерам</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_10.svg" alt="" />
+											</a>
+											<a href="#" class="menu_thumb">
+												<div class="menu_thumb_descript">
+													<p>Вакансии</p>
+													<i class="arrow creame"></i>
+												</div>
+												<img class="nav_icon" src="img/nav_11.svg" alt="" />
+											</a>
+										</div>
+									</div>
+								</div> -->
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">Отзывы</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">Гид покупателя</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">ВНЖ в Турции</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">Гражданство Турции</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">Блог</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+								<svg class="down_arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="search_form">
+							<div>
+								<input type="text" placeholder="Поиск по сайту" />
+							</div>
+							<div>
+								<button type="submit" class="search_btn">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.115 10.0941L13 13M11.6667 6.33333C11.6667 9.27885 9.27885 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27885 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27885 1 11.6667 3.38781 11.6667 6.33333Z" stroke="#657898" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- SubMenuItems -->
-		<div class="sub_menu" data-subindex = "2">
-			<div class="menu_thumbs">
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>О компании</p>
-						<i class="arrow orange"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_01.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Почему мы</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_02.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>История и достижения</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_03.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Наша команда</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_04.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Ценности и принципы</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_05.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Документы и Сертификаты</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_06.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Дипломы и награды</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_07.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Пресса о нас</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_08.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Благотворительность</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_09.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Партнерам</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_10.svg" alt="" />
-				</a>
-				<a href="#" class="menu_thumb">
-					<div class="menu_thumb_descript">
-						<p>Вакансии</p>
-						<i class="arrow creame"></i>
-					</div>
-					<img class="nav_icon" src="img/nav_11.svg" alt="" />
-				</a>
+		<!-- <div class="sub_menu" data-subindex = "2">
+			<div class="row">
+				<div class="menu_thumbs">
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>О компании</p>
+							<i class="arrow orange"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_01.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Почему мы</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_02.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>История и достижения</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_03.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Наша команда</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_04.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Ценности и принципы</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_05.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Документы и Сертификаты</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_06.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Дипломы и награды</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_07.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Пресса о нас</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_08.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Благотворительность</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_09.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Партнерам</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_10.svg" alt="" />
+					</a>
+					<a href="#" class="menu_thumb">
+						<div class="menu_thumb_descript">
+							<p>Вакансии</p>
+							<i class="arrow creame"></i>
+						</div>
+						<img class="nav_icon" src="img/nav_11.svg" alt="" />
+					</a>
+				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- /SubMenuItems -->
 		<div class="slider_section">
 			<div class="promo_slider swiper">
@@ -367,7 +563,825 @@
 				</svg>
 			  </div>
 			</div>
+			<!-- Filters -->
+			<div class="filters_box">
+				<div class="fiters_top_row">
+					<div class="filter_inlines">
+						<div>
+							<div class="filter">
+								<div class="filter_title">
+									<p>Выберите регион</p>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="filter_dr">
+									<div class="filters_box_dr">
+										<div class="filters_title">
+											<h3>Регион</h3>
+										</div>
+										<div class="filters_scroll">
+											<div class="filters_list">
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Анталия</span>
+															</span>
+															<span>
+																<span class="val_num">25</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Стамбул</span>
+															</span>
+															<span>
+																<span class="val_num">4</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+														<span class="val_name">Мерсин</span>
+														</span>
+															<span>
+														<span class="val_num">17</span>
+														</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Бодрум</span>
+															</span>
+															<span>
+																<span class="val_num">17</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch ziro">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Северный Кипр</span>
+															</span>
+															<span>
+																<span class="val_num">0</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch ziro">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Белек</span>
+															</span>
+															<span>
+																<span class="val_num">0</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Кемер</span>
+															</span>
+															<span>
+																<span class="val_num">17</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Измир</span>
+															</span>
+															<span>
+																<span class="val_num">9</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Фетхие</span>
+															</span>
+															<span>
+																<span class="val_num">18</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Сиде</span>
+															</span>
+															<span>
+																<span class="val_num">7</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Финике</span>
+															</span>
+															<span>
+																<span class="val_num">9</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Каш</span>
+															</span>
+															<span>
+																<span class="val_num">1</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Калкан</span>
+															</span>
+															<span>
+																<span class="val_num">4</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Дидим</span>
+															</span>
+															<span>
+																<span class="val_num">32</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_ch">
+														<input type="checkbox" name="filter" />
+														<span class="ch_icon"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Кушадасы</span>
+															</span>
+															<span>
+																<span class="val_num">18</span>
+															</span>
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="filter_links">
+												<div class="filter_link_box">
+													<div>
+														<a href="#" class="filter_link">Все предложения</a>
+													</div>
+													<div>
+														<p>20</p>
+													</div>
+												</div>
+												<div class="filter_link_box">
+													<div>
+														<a href="#" class="filter_link">Горячие предложения</a>
+													</div>
+													<div>
+														<p>8</p>
+													</div>
+												</div>
+												<div class="filter_link_box">
+													<div>
+														<a href="#" class="filter_link">С рассрочкой до 5 лет</a>
+													</div>
+													<div>
+														<p>4</p>
+													</div>
+												</div>
+												<div class="filter_link_box">
+													<div>
+														<a href="#" class="filter_link">Гарантия аренды</a>
+													</div>
+													<div>
+														<p>10</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="filter">
+								<div class="filter_title">
+									<p>Тип объекта</p>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="filter_dr filter_dr_2">
+									<div class="filters_box_dr">
+										<div class="filters_scroll">
+											<div class="filters_list">
+												<div>
+													<label class="filter_radio">
+														<input type="checkbox" name="filter_2" />
+														<span class="filter_radio_bg"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Квартира</span>
+															</span>
+															<span>
+																<span class="val_num">4</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_radio">
+														<input type="checkbox" name="filter_2" />
+														<span class="filter_radio_bg"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Вилла и дом</span>
+															</span>
+															<span>
+																<span class="val_num">17</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_radio ziro">
+														<input type="checkbox" name="filter_2" />
+														<span class="filter_radio_bg"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Коммерческая</span>
+															</span>
+															<span>
+																<span class="val_num">0</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_radio ziro">
+														<input type="checkbox" name="filter_2" />
+														<span class="filter_radio_bg"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Земельный участок</span>
+															</span>
+															<span>
+																<span class="val_num">0</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div>
+													<label class="filter_radio">
+														<input type="checkbox" name="filter_2" />
+														<span class="filter_radio_bg"></span>
+														<span class="filter_flex">
+															<span>
+																<span class="val_name">Отель</span>
+															</span>
+															<span>
+																<span class="val_num">2</span>
+															</span>
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="filter prices_filter">
+								<div class="filter_title">
+									<div class="price_filters">
+										<div>
+											<p><span id="startPrice">0</span> - <span id="endPrice">0</span></p>
+										</div>
+										<div>
+											<p id="valuteVal">€</p>
+										</div>
+									</div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="filter_dr filter_dr_3">
+									<div class="filters_box_dr">
+										<div class="prices_inputs">
+											<div>
+												<div class="price_input">
+													<p>от</p>
+													<input id="startPriceInput" type="text" />
+												</div>
+											</div>
+											<div>
+												<div class="price_input">
+													<p>до</p>
+													<input id="endPriceInput" type="text" />
+												</div>
+											</div>
+										</div>
+										<div class="price_valutes">
+											<label class="price_valute">
+												<input type="radio" name="valute" value="€" />
+												<p>
+													<img src="img/flags/eur.svg" alt="" />
+													<span>EUR</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="$" />
+												<p>
+													<img src="img/flags/usa.svg" alt="" />
+													<span>USD</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="T" />
+												<p>
+													<img src="img/flags/try.svg" alt="" />
+													<span>TRY</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="G" />
+												<p>
+													<img src="img/flags/gbr.svg" alt="" />
+													<span>GBP</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="I" />
+												<p>
+													<img src="img/flags/irr.svg" alt="" />
+													<span>IRR</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="гр" />
+												<p>
+													<img src="img/flags/uah.svg" alt="" />
+													<span>UAH</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="Ф" />
+												<p>
+													<img src="img/flags/aed.svg" alt="" />
+													<span>AED</span>
+												</p>
+											</label>
+											<label class="price_valute">
+												<input type="radio" name="valute" value="К" />
+												<p>
+													<img src="img/flags/kzt.svg" alt="" />
+													<span>KZT</span>
+												</p>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="filter_input_wrapp">
+								<input type="text" placeholder="Поиск по ID" />
+							</div>
+						</div>
+						<div>
+							<div class="filter more_filters">
+								<div class="filter_title">
+									<div class="countFilters">0</div>
+									<p>Еще фильтры</p>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4 6L8 10L12 6" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="filter_dr">
+									<div class="filters_box_dr">
+										<div class="tabs_wrapp">
+											<div class="tab_pills">
+												<div>
+													<label class="tab_pill active" for="tab_1">Преимущества</label>
+												</div>
+												<div>
+													<label class="tab_pill" for="tab_2">Инфраструктура</label>
+												</div>
+											</div>
+											<div class="tabs_contents">
+												<input type="radio" class="tab_radio" id="tab_1" name="filter_tabs" checked>
+												<div class="tab_content">
+													<div class="filters_scroll">
+														<div class="filters_list filters_list_2">
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" checed/>
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FFF3F1;">
+																				<img src="img/icons/shield-dollar.svg" alt="" />
+																				<span style="color: #BB2B10;" class="icon_val_name_text">Гарантия лучшей цены</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">4</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FEF4FF;">
+																				<img src="img/icons/certificate-02.svg" alt="" />
+																				<span style="color: #7F41A1;" class="icon_val_name_text">Для гражданства</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">17</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch ziro_2">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FEF4FF;">
+																				<img src="img/icons/sale-02.svg" alt="" />
+																				<span style="color: #806339;" class="icon_val_name_text">Комиссия 0%</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">0</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch ziro_2">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FFF8F4;">
+																				<img src="img/icons/award-01.svg" alt="" />
+																				<span style="color: #FE622E;" class="icon_val_name_text">Лидер продаж</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">0</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FDF0FB;">
+																				<img src="img/icons/key-01.svg" alt="" />
+																				<span style="color: #A04C96;" class="icon_val_name_text">Готово к заселению</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">2</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FFFBD8;">
+																				<img src="img/icons/coins-stacked-01.svg" alt="" />
+																				<span style="color: #CEA400;" class="icon_val_name_text">Недорого</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">25</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FDF0FB;">
+																				<img src="img/icons/star-01.svg" alt="" />
+																				<span style="color: #F50100;" class="icon_val_name_text">Горячие предложения</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">6</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FCF1F7;">
+																				<img src="img/icons/diamond-01.svg" alt="" />
+																				<span style="color: #D1428C;" class="icon_val_name_text">Элитная</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">6</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #EEFBF6;">
+																				<img src="img/icons/house-fire.svg" alt="" />
+																				<span style="color: #049361;" class="icon_val_name_text">Для инвестиций</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">13</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FFF3FC;">
+																				<img src="img/icons/pie-chart-02.svg" alt="" />
+																				<span style="color: #D1428C;" class="icon_val_name_text">В рассрочку</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">15</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #FFE8E8;">
+																				<img src="img/icons/chart-line-down.svg" alt="" />
+																				<span style="color: #A82525;" class="icon_val_name_text">Цена снижена</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">1</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #F5F6F9;">
+																				<img src="img/icons/users-edit.svg" alt="" />
+																				<span style="color: #657898;" class="icon_val_name_text">От застройщика</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">27</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #F5FEF0;">
+																				<img src="img/icons/file-user.svg" alt="" />
+																				<span style="color: #45732B;" class="icon_val_name_text">Для ВНЖ</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">4</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #EEF2FA;">
+																				<img src="img/icons/coins-hand.svg" alt="" />
+																				<span style="color: #033AA5;" class="icon_val_name_text">Гарантия аренды</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">17</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<input type="radio" class="tab_radio" id="tab_2" name="filter_tabs">
+												<div class="tab_content">
+													<div class="filters_scroll">
+														<div class="filters_list">
+															<div>
+																<label class="filter_ch">
+																	<input type="checkbox" name="more_filter" />
+																	<span class="ch_icon"></span>
+																	<span class="filter_flex">
+																		<span>
+																			<span class="icon_val_name" style="background: #EEF2FA;">
+																				<img src="img/icons/coins-hand.svg" alt="" />
+																				<span style="color: #033AA5;" class="icon_val_name_text">Гарантия аренды</span>
+																			</span>
+																		</span>
+																		<span>
+																			<span class="val_num">17</span>
+																		</span>
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<a href="#" class="orange_pill_2 filter_pill search_pill">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.3938 13.8676L18 17.5M16.3333 9.16667C16.3333 12.8486 13.3486 15.8333 9.66667 15.8333C5.98477 15.8333 3 12.8486 3 9.16667C3 5.48477 5.98477 2.5 9.66667 2.5C13.3486 2.5 16.3333 5.48477 16.3333 9.16667Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+								</svg>
+								Найти
+							</a>
+						</div>
+						<div>
+							<a href="#" class="white_pill filter_pill map_pill">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.5 16.6668L2.5 14.1668V3.3335L7.5 5.8335M7.5 16.6668L12.5 14.1668M7.5 16.6668V5.8335M12.5 14.1668L17.5 16.6668V5.8335L12.5 3.3335M12.5 14.1668V3.3335M7.5 5.8335L12.5 3.3335" stroke="#FF622D" stroke-width="1.2" stroke-linecap="round"/>
+								</svg>
+								Поиск по карте
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="fiters_bottom_row">
+					<div class="filter_inlines">
+						<div>
+							<a href="#" class="blue_tr_pill">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.39613 3.39569C9.58884 2.9779 9.68519 2.76901 9.81823 2.70385C9.93385 2.64722 10.0692 2.64722 10.1848 2.70385C10.3178 2.76901 10.4142 2.9779 10.6069 3.39569L12.1963 6.84165C12.2534 6.96529 12.2819 7.0271 12.3252 7.07465C12.3635 7.11673 12.41 7.15052 12.4618 7.17394C12.5204 7.2004 12.588 7.20842 12.7232 7.22445L16.4917 7.67126C16.9486 7.72544 17.177 7.75252 17.2801 7.85891C17.3697 7.95137 17.4115 8.08006 17.3934 8.20752C17.3725 8.35418 17.2036 8.51037 16.8658 8.82275L14.0797 11.3993C13.9797 11.4917 13.9298 11.5379 13.8979 11.5938C13.8697 11.6432 13.852 11.6979 13.8457 11.7544C13.8387 11.8183 13.8519 11.8851 13.8785 12.0187L14.618 15.7408C14.7077 16.192 14.7525 16.4177 14.6832 16.5486C14.623 16.6624 14.5135 16.7419 14.3867 16.764C14.2407 16.7895 14.04 16.6772 13.6385 16.4524L10.3271 14.5989C10.2083 14.5323 10.1489 14.4991 10.086 14.4861C10.0302 14.4745 9.97276 14.4745 9.91704 14.4861C9.85408 14.4991 9.79468 14.5323 9.67587 14.5989L6.36448 16.4524C5.96301 16.6772 5.76227 16.7895 5.61635 16.764C5.48952 16.7419 5.38005 16.6624 5.3198 16.5486C5.25047 16.4177 5.2953 16.192 5.38497 15.7408L6.12455 12.0187C6.15108 11.8851 6.16435 11.8183 6.15729 11.7544C6.15104 11.6979 6.13328 11.6432 6.10509 11.5938C6.07324 11.5379 6.02326 11.4917 5.9233 11.3993L3.13717 8.82275C2.79938 8.51037 2.63048 8.35418 2.60962 8.20752C2.59149 8.08006 2.63331 7.95137 2.7229 7.85891C2.82598 7.75252 3.05442 7.72544 3.51131 7.67126L7.27979 7.22445C7.41499 7.20842 7.4826 7.2004 7.54119 7.17394C7.59304 7.15052 7.63955 7.11673 7.67785 7.07465C7.72112 7.0271 7.74964 6.96529 7.80666 6.84165L9.39613 3.39569Z" fill="#0077BC"/>
+								</svg>
+								Лучшие предложения
+							</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Анталия</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Стамбул</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Мерсин</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Алания</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Бодрум</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Белек</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Кемер</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Кипр</a>
+						</div>
+						<div>
+							<a href="#" class="tag_pill">Все объекты</a>
+						</div>
+						<div>
+							<div class="blue_link_wrapp">
+								<a href="#" class="blue_link">Как выбрать регион?</a>
+							</div>
+						</div>
+					</div>
+					<p><a href="#" class="black_link">Скинуть все фильтры</a></p>
+				</div>
+			</div>
+			<!-- /Filters -->
 		</div>
+
 	</header>
 
 	<!-- /Header -->
@@ -1390,7 +2404,7 @@
 	</section>
 	<!-- /Section 2 - Main Page -->
 	<!-- Section 3 - Main Page -->
-	<section>
+	<section class="sect_3_mp">
 		<div class="row">
 			<div class="slider_header">
 				<div>
@@ -3539,7 +4553,7 @@
 	</section>
 	<!-- /Section 5 - Main Page -->
 	<!-- Section 6 - Main Page -->
-	<section>
+	<section class="sect_6_mp">
 		<div class="row">
 			<div class="slider_header">
 				<div>
@@ -4456,101 +5470,6 @@
 		<div class="row">
 			<div class="testimonial_two_cols">
 				<div>
-					<!-- <div class="testimonial_slide">
-						<div class="testimonial_left">
-							<div class="testimonial_left_header">
-								<div>
-									<h2>Отзывы клиентов</h2>
-								</div>
-								<div>
-									<div class="blue_tags_inline">
-										<div>
-											<div class="blue_tag">
-												<p>37+ стран</p>
-											</div>
-										</div>
-										<div>
-											<div class="blue_tag">
-												<p>1000+ отзывов</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial_slide_inner">
-								<div class="testimonial_author">
-									<div>
-										<div class="testimonial_author_photo">
-											<img src="img/author.jpg" alt="" />
-										</div>
-									</div>
-									<div>
-										<h3>Елена, Турция <img src="img/flag.svg" alt="" /></h3>
-										<p>16.03.2023</p>
-									</div>
-								</div>
-								<div class="testimonial_descript">
-									<p>Мы хотим выразить признательность агентству Tolerance Homes, за неоценимую помощь в поиске и покупке квартиры в Анталии! Мы прошли не одно агентство, но только в Tolerance Homes отнеслись крайне внимательно к нашим потребностям и подобрали именно то, что мы хотели.</p>
-								</div>
-								<div>
-									<a href="#" class="more_link">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5 15L15 5M15 5H8.33333M15 5V11.6667" stroke="#0E2141" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										Читать полностью
-									</a>
-								</div>
-								<div class="g_rate">
-									<img src="img/g.png" alt="" />
-								</div>
-								<div class="testimonial_btn_wrapp">
-									<a href="#" class="orange_pill_2">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5 15L15 5M15 5H8.33333M15 5V11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										Все отзывы
-									</a>
-								</div>
-							</div>
-						</div>							
-						<div class="video_thumb">
-							<a href="#" class="video_link">
-								<svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<ellipse cx="39.9994" cy="39.9923" rx="39.9994" ry="39.9923" transform="matrix(0.965939 -0.258769 0.258869 0.965912 0 20.7012)" fill="white"/>
-									<ellipse cx="29.9996" cy="29.9942" rx="29.9996" ry="29.9942" transform="matrix(0.965939 -0.258769 0.258869 0.965912 12.25 27.7812)" fill="url(#paint0_linear_10957_3658)"/>
-									<path d="M57.3649 45.4704C58.8523 45.8688 59.3505 47.7279 58.2617 48.8165L47.8519 59.2242C46.7632 60.3127 44.9044 59.8144 44.5058 58.3274L40.6956 44.1103C40.297 42.6232 41.6577 41.2625 43.1449 41.6609L57.3649 45.4704Z" fill="white"/>
-									<defs>
-									<linearGradient id="paint0_linear_10957_3658" x1="29.9996" y1="0" x2="29.9996" y2="59.9884" gradientUnits="userSpaceOnUse">
-									<stop stop-color="#35B6EE"/>
-									<stop offset="1" stop-color="#0D87CD"/>
-									</linearGradient>
-									</defs>
-								</svg>
-							</a>
-							<a href="#" class="video_img_link">
-								<img src="img/video_img.jpg" alt="" />
-							</a>
-							<div class="video_thumb_descript">
-								<p>Магазины в Турции, их виды и особенности. Подробный гид по турецким магазинам</p>
-							</div>
-							<ul class="video_tags">
-								<li>1,5 тыс. просмотров</li>
-								<li>1 день назад</li>
-							</ul>
-							<div class="video_thumb_footer">
-								<div>
-									<ul class="soc_links_2">
-										<li><a href="#"><img src="img/icon_09.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/icon_10.svg" alt="" /></a></li>
-										<li><a href="#"><img src="img/icon_11.svg" alt="" /></a></li>
-									</ul>
-								</div>
-								<div>
-									<a href="#" class="single_link"><img src="img/icon_12.svg" alt="" /></a>
-								</div>
-							</div>
-						</div>
-					</div> -->
 					<div class="swiper testimonialSlider">
 						<div class="swiper-wrapper testimonialSlider_wrapper">
 							<div class="swiper-slide testimonial_slide">
@@ -5740,7 +6659,7 @@
 	</section>
 	<!-- /Section 8 - Main Page -->
 	<!-- Section 9 - Main Page -->
-	<section>
+	<section class="sect_9_mp">
 		<div class="row">
 			<div class="slider_header">
 				<div>
@@ -7652,7 +8571,7 @@
 	</section>
 	<!-- /Section 11 - Main Page -->
 	<!-- Section 12 - Main Page -->
-	<section>
+	<section class="sect_12_mp">
 		<div class="row">
 			<div class="h2_wrapp center">
 				<h2><span>Полезные видео</span> о жизни в Турции</h2>
@@ -9861,10 +10780,137 @@
 					<div>
 						<div class="dr_inlines">
 							<div>
-								
+								<div class="custom_select custom_select_2">
+									<input type="hidden" value="Русский">
+									<div class="custom_select_title">
+										<div class="p_val">
+											<img src="img/flags/ru.svg" alt="" />
+											<span>RU</span>
+										</div>
+									</div>
+									<div class="custom_dr custom_dr_2 lang_dr">
+										<div class="custom_select_list checkout_list">
+											<div class="langs_thumbs">
+												<div>
+													<label class="lang_thumb" data-value="EN">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/gbr.svg" alt="" />English</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="RU">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/ru.svg" alt="" />Русский</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="GR">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/deuth.svg" alt="" />Deutsch</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="FR">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/fr.svg" alt="" />Français</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="ND">
+														<input type="radio" name="lang" />
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/ned.svg" alt="" />Nederlands</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="فارس" >
+														<input type="radio" name="lang"/>
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/i_2.svg" alt="" />فارسی</p>
+													</label>
+												</div>
+												<div>
+													<label class="lang_thumb" data-value="لعرب">
+														<input type="radio" name="lang"/>
+														<span class="lang_thumb_bg"></span>
+														<p><img src="img/flags/i_3.svg" alt="" /> العربية</p>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div>
-								
+								<div class="custom_select custom_select_2">
+									<div class="custom_select_title">
+										<p class="p_val"><span>EUR</span></p>
+									</div>
+									<div class="custom_dr custom_dr_2 valute_dr">
+										<div class="tels_codes checkout_list">
+											<div>
+												<label class="tel_radio" data-value="EUR" >
+													<input name="tel_code" type="radio" value="+7991" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/eur.svg" alt="" />EUR</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="USD" >
+													<input name="tel_code" type="radio" value="+7992" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/usa.svg" alt="" />USD</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="TRY" >
+													<input name="tel_code" type="radio" value="+7993" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/try.svg" alt="" />TRY</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="GBP" >
+													<input name="tel_code" type="radio" value="+7994" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/gbr.svg" alt="" />GBP</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="IRR" >
+													<input name="tel_code" type="radio" value="+7995" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/irr.svg" alt="" />IRR</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="UAH" >
+													<input name="tel_code" type="radio" value="+7996" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/uah.svg" alt="" />UAH</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="AED" >
+													<input name="tel_code" type="radio" value="+7997" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/aed.svg" alt="" />AED</p>
+												</label>
+											</div>
+											<div>
+												<label class="tel_radio" data-value="KZT" >
+													<input name="tel_code" type="radio" value="+7998" />
+													<span class="tel_code_bg"></span>
+													<p><img src="img/flags/kzt.svg" alt="" />KZT</p>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
