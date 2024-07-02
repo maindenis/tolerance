@@ -233,6 +233,22 @@ textarea:focus {
     text-align: left;
 }
 
+.visible_1124 {
+    display: none;
+}
+
+.visible_768 {
+    display: none;
+}
+
+.visible_700 {
+    display: none;
+}
+
+.visible_500 {
+    display: none;
+}
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -256,12 +272,12 @@ textarea:focus {
 }
 
 .header_top > .left {
-    width: calc(100% - 420px);
+    width: calc(100% - 380px);
     padding: 6px 10px 4px 0;
 }
 
 .header_top > .right {
-    width: 420px;
+    width: 380px;
     padding: 6px 0 4px 10px;
 }
 
@@ -601,15 +617,16 @@ textarea:focus {
     display: flex;
     padding: 0 30px;
     border-bottom: 1px solid #F3F9FE;
+    background: #fff;
 }
 
 .header_2 > .left {
-    width: 400px;
+    width: 350px;
     padding: 4px 4px 4px 0;
 }
 
 .header_2 > .right {
-    width: calc(100% - 400px);
+    width: calc(100% - 350px);
     padding: 4px 0 4px 4px;
 }
 
@@ -661,6 +678,7 @@ textarea:focus {
     border-radius: 12px 12px 0 0;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .pill_link .bottom_shape {
@@ -763,11 +781,12 @@ textarea:focus {
 
 .nav {
     display: flex;
-    margin: 12px -11px;
+    justify-content: space-between;
+    margin: 12px -8px;
 }
 
 .nav li {
-    padding: 0 11px;
+    padding: 0 8px;
     display: flex;
 }
 
@@ -972,6 +991,11 @@ textarea:focus {
     justify-content: flex-end;
 }
 
+#respNav {
+    display: none;
+    background: #fff;
+}
+
 .slider_section {
 /*    height: 590px;
     border-radius: 24px;
@@ -1101,6 +1125,10 @@ textarea:focus {
 
 .promo_text p:nth-child(even) {
     color: #E0682A;
+}
+
+.resp_inlines {
+    display: none;
 }
 
 /*-- SubMenuItems --*/
@@ -1280,7 +1308,7 @@ textarea:focus {
     top: 0;
     left: 0;
     border-radius: 0;
-    z-index: 14;
+    z-index: 15;
     background: #EAF4FF;
 } 
 
@@ -1310,18 +1338,31 @@ textarea:focus {
 
 /*-- /SubMenuItems --*/
 
+.blue_pill_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    background: #F3F9FE;
+    border: 1px solid #DDEBFD;
+    border-radius: 23px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0077BC;
+}
+
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
-    /*display: inline-block;*/
-    display: none;
-    vertical-align: top;
-    width: 26px;
-    height: 26px;
+    display: block;
+    width: 17px;
+    height: 17px;
     background: transparent;
     cursor: pointer;
     position: relative;
-    top: 12px;
+    top: 15px;
     z-index: 11;
     border: 1px solid transparent;
     margin-left: 10px;
@@ -1329,12 +1370,10 @@ textarea:focus {
 
 .respmenubtn span {
     display: block;
-    width: 24px;
+    width: 17px;
     height: 2px;
-    background: #1565C0;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    margin: 0 auto 6px auto;
+    background: #0E2141;
+    margin: 0 auto 4px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1366,15 +1405,16 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #FD8C04;
+    background: #0E2141;
 }
 
 .respmenubtn.active span {
     position: relative;
-    width: 30px;
+    width: 15px;
     top: 0;
     left: -2px;
-    background: #FD8C04;
+    background: #0E2141;
+    border-radius: 2px;
 }
 
 .respmenubtn.active span:last-child {
@@ -2175,7 +2215,17 @@ textarea:focus {
     border-bottom: 1px solid transparent;
 }
 
+.promo_slider_pagination {
+    display: none;
+}
+
 /*-- /Filters --*/
+
+.white_box_resp {
+    display: none;
+}
+
+
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -5594,18 +5644,58 @@ footer {
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
-    width: 100%;
-    max-height: 200px;
+/*    width: 100%;*/
+/*    max-height: 200px;*/
+/*    overflow-y: auto;*/
+/*    background: #FFF;*/
+/*    border: 1px solid #DDEBFD;
+    box-shadow: 0 0 40px rgba(0, 74, 152, .05);
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;*/
+}
+
+.whute_dr_box {
+    width: 359px;
+    background: #FFFFFF;
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
     overflow-y: auto;
-    background: #FFF;
     border: 1px solid #DDEBFD;
     box-shadow: 0 0 40px rgba(0, 74, 152, .05);
     border-radius: 12px;
-    padding: 5px 5px 5px 5px;
+    padding: 18px 25px 18px 25px;
 }
 
-.dr_tels_list > div {
+.tel_tubms_inline {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 16px 20px;
+    background: #EAF4FF;
+    border-radius: 12px;
+}
+
+/*.dr_tels_list > div {
     margin: 5px 0;
+}*/
+
+.tel_tubms_inline .socilas {
+    margin-left: 10px;
+}
+
+.dr_tels_list .tel_thumb p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0E2141;
+}
+
+.close_dr {
+    display: none;
+}
+
+.dr_bg {
+    display: none;
 }
 
 .footer_top_row .nav_pills {
