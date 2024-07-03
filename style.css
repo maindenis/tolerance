@@ -4745,21 +4745,24 @@ textarea:focus {
     padding: 13px 0 36px 0;
 }
 
-.article_thumb {
+.article_thumb_wrapp {
     width: calc(33.33% - 20px);
     margin: 10px;
+}
+
+.article_thumb {
     padding: 20px 20px 14px 20px;
     background: #FFF;
     border-radius: 24px;
 }
 
-.article_thumb_multiple {
+/*.article_thumb_multiple {
     width: calc(33.33% - 20px);
     margin: 0 10px;
-}
+}*/
 
 .article_thumb_2 {
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     border: 1px solid #DDEBFD;
     border-radius: 24px;
     background: transparent;
@@ -4827,6 +4830,7 @@ textarea:focus {
 
 .article_thumb_descript {
     min-height: 67px;
+    padding-bottom: 17px;
 }
 
 .article_thumb_descript p {
@@ -4846,6 +4850,10 @@ textarea:focus {
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
+    color: #0077BC;
+}
+
+.more_link_2.blue {
     color: #0077BC;
 }
 

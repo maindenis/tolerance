@@ -768,6 +768,68 @@ display: none;
 
 /*-- /Section 13 - Main Page --*/
 
+/*-- Section 15 - Main Page --*/
+
+.blue_box_4 {
+    position: relative;
+}
+
+.articles_box {
+    overflow: hidden;
+}
+
+.articles_thumbs {
+    padding: 13px 0 7px 0;
+    flex-wrap: nowrap;
+}
+
+.article_thumb_wrapp {
+    width: 440px !important;
+}
+
+.article_thumb {
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+}
+
+.articles_box_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    padding-bottom: 16px;
+}
+
+.articles_box_pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #D9E4F0;
+    border-radius: 50%;
+}
+
+.articles_box_pagination .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: #0077BC;
+}
+
+.articles_box_pagination .swiper-pagination-bullet.prevBullet {
+    width: 8px;
+    height: 8px;
+    background: #D9E4F0;
+}
+
+.articles_box_pagination .swiper-pagination-bullet.nextBullet {
+    width: 8px;
+    height: 8px;
+    background: #D9E4F0;
+}
+
+
+/*-- /Section 15 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -934,6 +996,14 @@ display: none;
 }
 
 /*-- /Section 13 - Main Page --*/
+
+/*-- Section 15 - Main Page --*/
+
+.h2_wrapp h2 {
+    font-size: 30px;
+}
+
+/*-- /Section 15 - Main Page --*/
 
 }
 
@@ -1553,6 +1623,36 @@ display: none;
 
 /*-- /Section 13 - Main Page --*/
 
+/*-- Section 15 - Main Page --*/
+
+.article_thumb_wrapp {
+    width: 335px !important;
+}
+
+.article_thumb_tags {
+    margin: 12px -7px 8px -7px;
+}
+
+.article_thumb_tags > div:last-child {
+    display: none;
+}
+
+.article_thumb_title {
+    padding-bottom: 10px;
+    min-height: 62px;
+}
+
+.article_thumb_title a {
+    font-size: 20px;
+}
+
+.article_thumb_descript {
+    min-height: 67px;
+    padding-bottom: 10px;
+}
+
+/*-- /Section 15 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2075,6 +2175,32 @@ display: none;
 }
 
 /*-- /Section 12 - Main Page --*/
+
+/*-- Section 15 - Main Page --*/
+
+.blue_box_4 {
+    border-radius: 12px;
+    margin: 27px 10px 23px 10px;
+    padding: 24px 0 31px 0;
+}
+
+.articles_box {
+    margin-top: -10px;
+}
+
+.article_thumb {
+    border-radius: 12px;
+}
+
+.article_thumb_wrapp {
+    width: 300px !important;
+}
+
+.articles_box_btn .orange_pill_2 {
+    width: 100%;
+}
+
+/*-- /Section 15 - Main Page --*/
 
 }
 
