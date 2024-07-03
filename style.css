@@ -4296,6 +4296,10 @@ textarea:focus {
     color: #657898;
 }
 
+.videoSlider2_box_pag {
+    display: none;
+}
+
 /*-- /Section 10 - Main Page --*/
 
 /*-- Section 12 - Main Page --*/

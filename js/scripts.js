@@ -529,6 +529,24 @@ $(document).ready(function() {
         navigation: {
             nextEl: '.videos_next',
             prevEl: '.videos_prev',
+        },
+        pagination: {
+            el: ".videoSlider2_box_pag",
+            clickable: true
+        },
+        on: {
+            init: function () {
+                $(".videoSlider2_box_pag .swiper-pagination-bullet").removeClass("prevBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet").removeClass("nextBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+            },
+            slideChange: function () {
+                $(".videoSlider2_box_pag .swiper-pagination-bullet").removeClass("prevBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet").removeClass("nextBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                $(".videoSlider2_box_pag .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+            }
         }
     });
 

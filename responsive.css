@@ -1413,6 +1413,76 @@ display: none;
 
 /*-- /Section 10 - Main Page --*/
 
+/*-- Section 12 - Main Page --*/
+
+.sect_12_mp {
+    padding: 30px 0 30px 0;
+}
+
+.h2_wrapp h2 {
+    font-size: 28px;
+}
+
+.videoSlider2 {
+    margin-bottom: 23px;
+}
+
+.videoSlider2Slide {
+    width: 323px !important;
+    padding: 18px 5px 25px 5px;
+}
+
+.video_thumb_2 {
+    width: 100%;
+}
+
+.video_thumb_2_img {
+    height: 190px;
+}
+
+.video_thumb_2_title {
+    margin: 11px 0 6px 0;
+    font-size: 20px;
+}
+
+.videoSlider2_box_pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -3px !important;
+}
+
+.videoSlider2_box_pag .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #D9E4F0;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.videoSlider2_box_pag .swiper-pagination-bullet.prevBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.videoSlider2_box_pag .swiper-pagination-bullet.nextBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.videoSlider2_box_pag .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: #0077BC;
+}
+
+.videos_next,
+.videos_prev {
+    display: none;
+}
+
+/*-- /Section 12 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1805,6 +1875,16 @@ display: none;
 }
 
 /*-- /Section 9 - Main Page --*/
+
+/*-- Section 12 - Main Page --*/
+
+.videoSlider2_btn .orange_pill_2 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*-- /Section 12 - Main Page --*/
 
 }
 
