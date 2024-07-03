@@ -237,6 +237,10 @@ textarea:focus {
     display: none;
 }
 
+.visible_1024 {
+    display: none;
+}
+
 .visible_768 {
     display: none;
 }
@@ -2276,10 +2280,13 @@ textarea:focus {
     margin: 35px -10px;
 }
 
-.adv_thumb {
+.adv_thumb_wrapp {
     width: calc(50% - 20px);
-    min-height: 116px;
     margin: 10px;
+}
+
+.adv_thumb {
+    min-height: 116px;
     padding: 23px 20px;
     background: #FFF;
     border: 1px solid #DDEBFD;
@@ -2472,6 +2479,10 @@ textarea:focus {
 
 .adv_thumb:hover .adv_thumbs_descript p {
     color: #fff;
+}
+
+.advThumbsSlider_pagination {
+    display: none;
 }
 
 /*-- /Section 1 - Main Page --*/
@@ -4088,8 +4099,8 @@ textarea:focus {
     height: 48px;
     border-radius: 50%;
     position: absolute;
-    bottom: 44px;
-    right: 69px;
+    bottom: 84px;
+    right: 49px;
     z-index: 2;
     cursor: pointer;
 }
