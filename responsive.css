@@ -1131,6 +1131,14 @@ display: none;
 
 /*-- /Section 17 - Main Page --*/
 
+/*-- Section 19 - Main Page --*/
+
+.seo_list li {
+    width: 50%;
+}
+
+/*-- /Section 19 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -2069,7 +2077,7 @@ display: none;
 /*-- Section 18 - Main Page --*/
 
 .blue_box_form {
-    margin: 62px 10px 16px 10px;
+    margin: 62px 10px 9px 10px;
 }
 
 .callback_templ > div:nth-child(1) {
@@ -2215,6 +2223,14 @@ display: none;
 }
 
 /*-- /Section 1 - Main Page --*/
+
+/*-- Section 19 - Main Page --*/
+
+.seo_list li a {
+    font-size: 14px;
+}
+
+/*-- /Section 19 - Main Page --*/
 
 }
 
@@ -2469,6 +2485,30 @@ display: none;
 }
 
 /*-- /Section 16 - Main Page --*/
+
+}
+
+@media only screen and (max-width: 400px) {
+
+/*-- Section 19 - Main Page --*/
+
+.seo_box {
+    padding: 2px 0 2px 0;
+}
+
+.seo_list {
+    padding: 9px 0;
+}
+
+.seo_list li {
+    width: 100%;
+}
+
+.seo_list_2 {
+    padding: 23px 0 14px 0;
+}
+
+/*-- /Section 19 - Main Page --*/
 
 }
 

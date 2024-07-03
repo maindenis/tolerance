@@ -137,6 +137,95 @@ function getRespSlider() {
         $(".verticalScroll_box").removeClass("swiper");
     }
 
+
+    var articles_box;
+
+    if(bodyWidth <= 1124) {
+        if($(".articles_box .swiper-slide").length == 0) {
+            $(".article_thumb_wrapp").addClass("swiper-slide");
+        }
+        if(!$(".articles_thumbs").hasClass("swiper-wrapper") ) {
+            $(".articles_thumbs").addClass("swiper-wrapper");
+        }
+        if($(".articles_box").length == 0) {
+            $(".articles_box").addClass("swiper");
+        }
+        if(!$(".articles_box").hasClass("swiper-init")) {
+            articles_box = new Swiper(".articles_box", {
+            loop: true,
+              slidesPerView: "auto",
+              spaceBetween: 0,
+              pagination: {
+                el: ".articles_box_pagination",
+                clickable: true
+              },
+                on: {
+                    init: function () {
+                        $(".articles_box_pagination .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    },
+                    slideChange: function () {
+                        $(".articles_box_pagination .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".articles_box_pagination .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    }
+                  }
+            });
+        }
+    } else {
+        $(".article_thumb_wrapp").removeClass("swiper-slide");
+        $(".articles_thumbs").removeClass("swiper-wrapper");
+        $(".articles_thumbs").attr("style", "");
+        $(".articles_box").removeClass("swiper");
+    }
+
+    var articles_thumbs_3;
+
+    if(bodyWidth <= 768) {
+        if($(".articles_thumbs_3_sl .swiper-slide").length == 0) {
+            $(".article_thumb_3_wrapp").addClass("swiper-slide");
+        }
+        if(!$(".articles_thumbs_3").hasClass("swiper-wrapper") ) {
+            $(".articles_thumbs_3").addClass("swiper-wrapper");
+        }
+        if($(".articles_thumbs_3_sl").length == 0) {
+            $(".articles_thumbs_3_sl").addClass("swiper");
+        }
+        if(!$(".articles_thumbs_3_sl").hasClass("swiper-init")) {
+            articles_box = new Swiper(".articles_thumbs_3_sl", {
+                loop: true,
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                pagination: {
+                    el: ".articles_box_pagination_2",
+                    clickable: true
+                },
+                on: {
+                    init: function () {
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    },
+                    slideChange: function () {
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".articles_box_pagination_2 .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    }
+                  }
+            });
+        }
+    } else {
+        $(".article_thumb_3_wrapp").removeClass("swiper-slide");
+        $(".articles_thumbs_3").removeClass("swiper-wrapper");
+        $(".articles_thumbs_3").attr("style", "");
+        $(".articles_thumbs_3_sl").removeClass("swiper");
+    }
+
 }
 
 var w = window,
