@@ -276,13 +276,13 @@ textarea:focus {
 }
 
 .header_top > .left {
-    width: calc(100% - 380px);
-    padding: 6px 10px 4px 0;
+    width: calc(100% - 400px);
+    padding: 6px 5px 4px 0;
 }
 
 .header_top > .right {
-    width: 380px;
-    padding: 6px 0 4px 10px;
+    width: 400px;
+    padding: 6px 0 4px 5px;
 }
 
 .inlines {
