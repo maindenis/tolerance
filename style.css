@@ -4928,6 +4928,8 @@ textarea:focus {
 .faq_wrapp {
     max-width: 900px;
     margin: 43px auto 29px auto;
+    position: relative;
+    z-index: 2;
 }
 
 .faq_item {
@@ -4985,7 +4987,7 @@ textarea:focus {
 }
 
 .faq_item {
-    background: transparent;
+    background: #fff;
     margin: 8px 0;
     padding: 22px 20px 22px 20px;
     -webkit-transition-property: background;
