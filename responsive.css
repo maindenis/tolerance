@@ -125,6 +125,18 @@
 
 /*-- /Section 4 - Main Page --*/
 
+/*-- Section 7 - Main Page --*/
+
+.testimonial_slide_inner {
+    max-width: 330px;
+}
+
+.video_thumb {
+    left: calc(100% - 435px);
+}
+
+/*-- /Section 7 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -218,10 +230,28 @@
     left: 10px;
 }
 
-
 /*-- /Section 4 - Main Page --*/
 
+/*-- Section 7 - Main Page --*/
 
+.testimonial_slide {
+    padding: 28px 28px 28px 28px;
+}
+
+.video_thumb {
+    width: 280px;
+    left: calc(100% - 323px);
+}
+
+.test_slide_prev {
+    right: -5px;
+}
+
+.test_slide_next {
+    right: -5px;
+}
+
+/*-- /Section 7 - Main Page --*/
 
 }
 
@@ -652,6 +682,36 @@ display: none;
 
 /*-- /Section 1 - Main Page --*/
 
+/*-- Section 7 - Main Page --*/
+
+.testimonial_left_header {
+    flex-wrap: wrap;
+}
+
+.testimonial_left_header > div:nth-child(1) {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.testimonial_left_header > div:nth-child(2) {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.blue_tags_inline {
+    justify-content: flex-start;
+}
+
+.testimonial_slide_inner {
+    max-width: 100%;
+}
+
+.video_thumb {
+    display: none;
+}
+
+/*-- /Section 7 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -781,6 +841,18 @@ display: none;
 }
 
 /*-- /Section 2 - Main Page --*/
+
+/*-- Section 7 - Main Page --*/
+
+.testimonial_left {
+    padding: 5px 15px 10px 15px;
+}
+
+.testimonial_slide {
+    padding: 15px 15px 15px 15px;
+}
+
+/*-- /Section 7 - Main Page --*/
 
 }
 
@@ -1050,6 +1122,126 @@ display: none;
 }
 
 /*-- /Section 4 - Main Page --*/
+
+/*-- Section 7 - Main Page --*/
+
+.testimonial_two_cols {
+    flex-wrap: wrap;
+}
+
+.testimonial_two_cols > div:nth-child(1) {
+    width: 100%;
+    padding: 16px 0 5px 0;
+}
+
+.testimonial_two_cols > div:nth-child(2) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.test_sl_arrow {
+    display: none;
+}
+
+.testimonial_left_header {
+    text-align: center;
+}
+
+.testimonial_left_header h2 {
+    padding: 0;
+    font-size: 24px;
+}
+
+.blue_tags_inline {
+    justify-content: center;
+}
+
+.blue_tag {
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.testimonial_descript {
+    padding-bottom: 9px;
+}
+
+.testimonial_author {
+    padding: 7px 0 16px 0;
+}
+
+.testimonial_left {
+    min-height: auto;
+}
+
+.count_slides {
+    display: block;
+    width: 268px;
+    margin: 0 auto;
+    padding: 0 13px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slide_img_box {
+    margin: 0 auto;
+}
+
+.cards_slider_box {
+    min-height: auto;
+}
+
+.testimonialSlider_pagination {
+    width: 100%;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    margin: 9px 0 9px 0;
+}
+
+.testimonialSlider_pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #FFF;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.testimonialSlider_pagination .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: #0077BC;
+}
+
+.testimonialSlider_pagination .swiper-pagination-bullet.prevBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.testimonialSlider_pagination .swiper-pagination-bullet.nextBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.testimonial_two_cols > div:nth-child(1) {
+    width: 100%;
+    padding: 16px 0 5px 0;
+    border-radius: 24px;
+    background-image: url(img/testimonial_slide.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonial_slide {
+    background-image: none;
+}
+
+.cardsSlider_wrapper {
+    margin-bottom: 17px;
+}
+
+/*-- /Section 7 - Main Page --*/
 
 }
 
@@ -1387,6 +1579,62 @@ display: none;
 }
 
 /*-- /Section 2 - Main Page --*/
+
+/*-- Section 7 - Main Page --*/
+
+.testimonial_two_cols {
+    padding: 30px 0 6px 0;
+}
+
+.testimonial_two_cols > div:nth-child(1) {
+    border-radius: 15px;
+}
+
+.testimonial_left {
+    border-radius: 15px;
+}
+
+.testimonial_btn_wrapp {
+    padding: 0 15px 25px 15px;
+}
+
+.testimonial_btn_wrapp .orange_pill_2 {
+    width: 100%;
+}
+
+.cardsSlider_box {
+    padding: 12px 0 0 0;
+}
+
+.cards_slider_title h2 {
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 28px;
+}
+
+.cards_slider_title p {
+    display: none;
+}
+
+.cards_slider_box {
+
+}
+
+.cards_slider_box .white_pill {
+    width: calc(100% - 30px);
+    min-height: 52px;
+    margin: 17px 15px 21px 15px;
+}
+
+/*-- /Section 7 - Main Page --*/
+
+/*-- Section 9 - Main Page --*/
+
+.sect_9_mp {
+    padding-top: 24px;
+}
+
+/*-- /Section 9 - Main Page --*/
 
 }
 
