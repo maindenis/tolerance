@@ -3970,7 +3970,6 @@ textarea:focus {
 .slide_img_box {
     width: 268px;
     height: 224px;
-    margin: 0 auto;
     border-radius: 16px;
     overflow: hidden;
     -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.05);
@@ -4146,6 +4145,7 @@ textarea:focus {
 .bonuse_box > div:nth-child(2) {
     width: 685px;
     padding: 0 0 0 10px;
+    position: relative;
 }
 
 .bonuse_count {
@@ -4174,6 +4174,10 @@ textarea:focus {
     font-size: 16px;
     line-height: 46px;
     color: #FFF;
+}
+
+.b_num_2 {
+    display: none;
 }
 
 .bonuse_article {
@@ -4218,14 +4222,18 @@ textarea:focus {
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 8px;
+    top: 31px;
     left: 5px;
 }
 
 .verticalScroll_box {
-    height: 553px;
+    width: 100%;
+    height: 100% !important;
     overflow-x: hidden;
     overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .verticalScroll_box::-webkit-scrollbar {
@@ -4253,15 +4261,18 @@ textarea:focus {
     margin: 0 -12px;
 }
 
-.bonuse_thumb {
+.bonuse_thumb_wrapp {
     width: calc(50% - 24px);
     margin: 12px 12px;
+}
+
+.bonuse_thumb {
     padding: 22px 24px 23px 24px;
     background: #FFF;
     border-radius: 16px;
 }
 
-.bonuse_thumb:nth-child(even) {
+.bonuse_thumb_wrapp:nth-child(even) {
     position: relative;
     top: 53px;
 }
