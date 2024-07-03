@@ -268,6 +268,18 @@
 
 /*-- /Section 7 - Main Page --*/
 
+/*-- Section 18 - Main Page --*/
+
+.callback_templ > div:nth-child(1) {
+    width: 320px;
+}
+
+.callback_templ > div:nth-child(2) {
+    width: calc(100% - 320px);
+}
+
+/*-- /Section 18 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 1220px) {
@@ -983,6 +995,32 @@ display: none;
 }
 
 /*-- /Section 17 - Main Page --*/
+
+/*-- Section 18 - Main Page --*/
+
+.callback_form_header h2 {
+    padding: 0;
+}
+
+.callback_form_header p {
+    padding: 0;
+}
+
+.callback_form {
+    padding: 0;
+}
+
+.callback_form_two_cols > div:nth-child(1),
+.callback_form_two_cols > div:nth-child(2) {
+    width: 100%;
+    padding: 0;
+}
+
+.callback_form_two_cols > div:nth-child(2) {
+    margin-top: -8px;
+}
+
+/*-- /Section 18 - Main Page --*/
 
 }
 
@@ -1799,6 +1837,14 @@ display: none;
 
 /*-- /Section 16 - Main Page --*/
 
+/*-- Section 18 - Main Page --*/
+
+.blue_box_form {
+    margin: 55px 10px 16px 10px;
+}
+
+/*-- /Section 18 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2019,6 +2065,74 @@ display: none;
 }
 
 /*-- /Section 13 - Main Page --*/
+
+/*-- Section 18 - Main Page --*/
+
+.blue_box_form {
+    margin: 62px 10px 16px 10px;
+}
+
+.callback_templ > div:nth-child(1) {
+    width: 320px;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.callback_templ > div:nth-child(2) {
+    width: 100%;
+    padding: 0;
+}
+
+.callback_person_wrapp {
+    height: 348px;
+    position: relative;
+    top: 41px;
+}
+
+.callback_person {
+    max-width: 338px;
+    height: 335px;
+    top: -30px;
+}
+
+.callback_person:before {
+    height: 117%;
+    border-radius: 12px;
+}
+
+.callback_person img {
+    height: auto;
+    max-height: auto;
+    max-height: 419px;
+}
+
+.callback_form {
+        padding: 12px 0 5px 0;
+}
+
+.callback_form_header {
+    text-align: center;
+}
+
+.callback_form_header h2 {
+    font-size: 28px;
+}
+
+.callback_form_header p {
+    padding: 15px 0;
+}
+
+.callback_person_text {
+    width: calc(100% - 16px);
+    bottom: 8px;
+    left: 8px;
+}
+
+.callback_submit {
+    margin: 15px 0 10px 0;
+}
+
+/*-- /Section 18 - Main Page --*/
 
 }
 

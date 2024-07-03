@@ -5104,7 +5104,7 @@ textarea:focus {
 }
 
 .blue_box_form {
-    margin: 115px 0 16px 0;
+    margin: 115px 10px 16px 10px;
     mix-blend-mode: soft-light;
     border-radius: 12px;
     background-image: url(img/callback_bg.jpg);
