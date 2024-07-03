@@ -807,6 +807,7 @@ display: none;
     height: 6px;
     background: #D9E4F0;
     border-radius: 50%;
+    opacity: 1;
 }
 
 .articles_box_pagination .swiper-pagination-bullet-active {
@@ -827,8 +828,39 @@ display: none;
     background: #D9E4F0;
 }
 
-
 /*-- /Section 15 - Main Page --*/
+
+/*-- Section 16 - Main Page --*/
+
+.article_thumb_3_wrapp {
+    width: calc(50% - 20px);
+}
+
+.article_thumb_3 {
+    display: block;
+    border-bottom: none;
+}
+
+.article_thumb_3 .article_thumb_tags > div:last-child {
+    display: block;
+}
+
+.article_thumb_3 > div:nth-child(1) {
+    width: 100%;
+    padding: 0;
+}
+
+.article_thumb_3 > div:nth-child(2) {
+    width: 100%;
+}
+
+.article_thumb_3 .img_box {
+    width: 100%;
+    height: 222px;
+    margin: 10px 0 10px 0;
+}
+
+/*-- /Section 16 - Main Page --*/
 
 }
 
@@ -1653,6 +1685,64 @@ display: none;
 
 /*-- /Section 15 - Main Page --*/
 
+/*-- Section 16 - Main Page --*/
+
+.blue_box_4 {
+    margin: 27px 10px 15px 10px;
+}
+
+.articles_thumbs_3_sl {
+    overflow: hidden;
+}
+
+.articles_thumbs_3 {
+    margin: -17px -10px 3px -10px;
+    flex-wrap: nowrap;
+}
+
+.article_thumb_3_wrapp {
+    width: 335px !important;
+}
+
+.articles_box_pagination_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+}
+
+.articles_box_pagination_2 .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #D9E4F0;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.articles_box_pagination_2 .swiper-pagination-bullet-active {
+    width: 6px;
+    height: 6px;
+    background: #0077BC;
+}
+
+.articles_box_pagination_2 .swiper-pagination-bullet.prevBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.articles_box_pagination_2 .swiper-pagination-bullet.nextBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.sect_16 .articles_box_btn {
+    padding: 16px 0 10px 0;
+}
+
+/*-- /Section 16 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2201,6 +2291,14 @@ display: none;
 }
 
 /*-- /Section 15 - Main Page --*/
+
+/*-- Section 16 - Main Page --*/
+
+.article_thumb_3_wrapp {
+    width: 330px !important;
+}
+
+/*-- /Section 16 - Main Page --*/
 
 }
 
