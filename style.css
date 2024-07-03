@@ -4501,6 +4501,8 @@ textarea:focus {
 .blue_box_3_inner {
     max-width: 405px;
     padding: 127px 0 20px 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .blue_box_3_inner h3 {
@@ -4556,7 +4558,7 @@ textarea:focus {
     width: 535px;
     height: 600px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
 }
 
