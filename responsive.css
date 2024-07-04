@@ -688,6 +688,11 @@ display: none;
     border-radius: 2px
 }
 
+.sub_nav_bg,
+.sub_menu {
+    display: none !important;
+}
+
 /*-- Filters --*/
 
 .filter_inlines > div {

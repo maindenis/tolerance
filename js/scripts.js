@@ -35,17 +35,13 @@ function getHeaderParams() {
 }
 
 function getSubMenuParams() {
-   if($(".sub_menu").lengtht > 0) {
+   if($(".sub_menu").length > 0) {
        $(".sub_menu").css({
            "height" : "auto"
        });
-       docScroll = $(document).scrollTop();
-       topCoord = $("#nav").offset().top + $("#nav").height() - docScroll;
-       $(".sub_menu").css({
-           "height" : $(window).height() - topCoord + "px"
+       $(".sub_menu .row").css({
+           "height" : $(window).height() - $("#headerHeight").height() + "px"
        });
-       leftCoord = $("#scrollCoord").offset().left;
-       $(".sub_menu").offset({left: leftCoord});
     }
 }
 
@@ -310,7 +306,7 @@ getScrollTopParams();
 });
 
 $(document).ready(function() {
-    getSubMenuParams();
+    // getSubMenuParams();
     getHeaderParams();
     // getRespSlider();
 
@@ -697,24 +693,49 @@ $(document).ready(function() {
 
     // ---------------
 
-    // $(".nav li").on("mouseover", function() {
-    //     index = $(this).attr("data-itemindex");
-    //     subMenu = $("[data-subindex = '"+index+"']");
-    //     // subMenu.offset({left:0});
-    //     // subMenu.fadeIn(300);
-    //     subMenu.addClass("visible");
-    //     subMenu.offset({top:topCoord});
-    //     console.log(index);
-    // });
+    $(".nav li").on("mouseover", function() {
+        index = $(this).attr("data-itemindex");
+        subMenu = $("[data-subindex = '"+index+"']");
+        if(subMenu.length > 0) {
+            $(".sub_menu").removeClass("visible");
+            $(".nav li").removeClass("active");
+            marginTop = $("#headerHeight").height();
+            subMenu.css({
+                "margin-top" : marginTop + "px"
+            });
+            subMenu.addClass("visible");
+            $("#subNavBg").addClass("active");
+            $("#headerHeight").addClass("z");
+            $(this).addClass("active");
+            getSubMenuParams();
+        } else {
+            $("#subNavBg").removeClass("active");
+            $("#headerHeight").removeClass("z");
+            $(".sub_menu").removeClass("visible");
+            $(this).removeClass("active");
+        }
+    });
 
-    // $(".nav li").on("mouseleave", function() {
-    //     // index = $(this).attr("data-itemindex");
-    //     subMenu = $("[data-subindex]");
-    //     // subMenu.offset({left:0});
-    //     // subMenu.fadeIn(300);
-    //     subMenu.removeClass("visible");
-    //     console.log(index);
-    // });
+    $(document).on("mouseup", function(e) {
+      hide_element = $(".subMenuInner");
+      if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+        $("#subNavBg").removeClass("active");
+        $("#headerHeight").removeClass("z");
+        $(".sub_menu").removeClass("visible");
+        $(".nav li").removeClass("active");
+      }
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27) {
+            $("#subNavBg").removeClass("active");
+            $("#headerHeight").removeClass("z");
+            $(".sub_menu").removeClass("visible");
+            $(".nav li").removeClass("active");
+            $(".nav li").removeClass("active");
+        }
+    });
 
     // -------------
 
@@ -801,6 +822,28 @@ $(document).ready(function() {
             setTimeout(function() {
                 z_parent.removeClass("active");
             }, 300);
+        }
+    });
+
+    $(document).on("mouseup", function(e) {
+      hide_element = $(".dr_tels_list");
+      z_parent = hide_element.closest(".z_parent");
+      parent = hide_element.closest(".dr_tels");
+      if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+        hide_element.slideUp(300);
+        parent.removeClass("active");
+        setTimeout(function() {
+            z_parent.removeClass("active");
+        }, 300);
+      }
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27) {
+          $(".dr_tels_list").slideUp(300);
+          $(".z_parent").removeClass("active");
+          $(".dr_tels").removeClass("active");
         }
     });
 
@@ -895,7 +938,7 @@ $(document).ready(function() {
     });
 
     // -----------------
-    
+
     $(".scroll_top").on("click", function() {
         $('html, body').stop().animate({
           'scrollTop': 0
