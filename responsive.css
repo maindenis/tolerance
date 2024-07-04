@@ -1250,6 +1250,60 @@ display: none;
     width: 50%;
 }
 
+.adreeses_thumbs_sl_wrapp {
+    position: relative;
+    border-bottom: 1px solid #DDEBFD;
+}
+
+.adreeses_thumbs_sl {
+    overflow: hidden;
+    margin: 0 -10px;
+}
+
+.adreeses_thumbs {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 3px 0 16px 0;
+}
+
+.adrees_thumb_wrapp {
+    width: 335px !important;
+}
+
+.adreeses_thumbs_sl_pg {
+    display: flex;
+    position: relative !important;
+    top: auto;
+    left: auto;
+    justify-content: center;
+    align-items: center;
+    top: -23px !important;
+}
+
+.adreeses_thumbs_sl_pg .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #D9E4F0;
+    opacity: 1;
+}
+
+.adreeses_thumbs_sl_pg .swiper-pagination-bullet.prevBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.adreeses_thumbs_sl_pg .swiper-pagination-bullet.nextBullet {
+    width: 8px;
+    height: 8px;
+}
+
+.adreeses_thumbs_sl_pg .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: #0077BC;
+}
+
+
 /*-- /Footer --*/
 
 }

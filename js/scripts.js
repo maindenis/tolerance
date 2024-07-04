@@ -226,6 +226,50 @@ function getRespSlider() {
         $(".articles_thumbs_3_sl").removeClass("swiper");
     }
 
+    var adreeses_thumbs_sl;
+
+    if(bodyWidth <= 900) {
+        if($(".adreeses_thumbs_sl .swiper-slide").length == 0) {
+            $(".adrees_thumb_wrapp").addClass("swiper-slide");
+        }
+        if(!$(".adreeses_thumbs").hasClass("swiper-wrapper") ) {
+            $(".adreeses_thumbs").addClass("swiper-wrapper");
+        }
+        if($(".adreeses_thumbs_sl").length == 0) {
+            $(".adreeses_thumbs_sl").addClass("swiper");
+        }
+        if(!$(".adreeses_thumbs_sl").hasClass("swiper-init")) {
+            articles_box = new Swiper(".adreeses_thumbs_sl", {
+                loop: true,
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                pagination: {
+                    el: ".adreeses_thumbs_sl_pg",
+                    clickable: true
+                },
+                on: {
+                    init: function () {
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    },
+                    slideChange: function () {
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet").removeClass("prevBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet").removeClass("nextBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet-active").prev(".swiper-pagination-bullet").addClass("prevBullet");
+                        $(".adreeses_thumbs_sl_pg .swiper-pagination-bullet-active").next(".swiper-pagination-bullet").addClass("nextBullet");
+                    }
+                  }
+            });
+        }
+    } else {
+        $(".adrees_thumb_wrapp").removeClass("swiper-slide");
+        $(".adreeses_thumbs").removeClass("swiper-wrapper");
+        $(".adreeses_thumbs").attr("style", "");
+        $(".adreeses_thumbs_sl").removeClass("swiper");
+    }
+
 }
 
 var w = window,
