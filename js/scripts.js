@@ -823,4 +823,19 @@ $(document).ready(function() {
     //     sl.slideUp(300);
     // });
 
+    // -----------------
+
+    $(".resp_dr_title").on("click", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".resp_dr");
+        sl = parent.find(".resp_dr_list");
+        if(sl.is(":hidden")) {
+            sl.slideDown(300);
+            parent.addClass("active");
+        } else {
+            sl.slideUp(300);
+            parent.removeClass("active");
+        }
+    });
+
 });

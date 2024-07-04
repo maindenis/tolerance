@@ -5689,14 +5689,7 @@ footer {
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
-/*    width: 100%;*/
-/*    max-height: 200px;*/
-/*    overflow-y: auto;*/
-/*    background: #FFF;*/
-/*    border: 1px solid #DDEBFD;
-    box-shadow: 0 0 40px rgba(0, 74, 152, .05);
-    border-radius: 12px;
-    padding: 5px 5px 5px 5px;*/
+    z-index: 2;
 }
 
 .whute_dr_box {
@@ -5919,9 +5912,13 @@ footer {
     padding: 12px 0 4px 0;
 }
 
-.adrees_thumb {
+.adrees_thumb_wrapp {
     width: 25%;
     padding: 20px 20px;
+}
+
+.adrees_thumb {
+
 }
 
 .adrees_thumb_link {
