@@ -263,6 +263,7 @@ textarea:focus {
     background: #FFF;
     border: 1px solid #F2F6FA;
     border-radius: 24px;
+    position: relative;
 }
 
 .header_top {
@@ -6149,4 +6150,8 @@ footer {
 
 .custom_select.custom_select_2.active .custom_dr.valute_dr {
     left: -91px;
+}
+
+.swiper-pagination {
+    z-index: 4 !important;
 }

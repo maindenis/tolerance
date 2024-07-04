@@ -447,6 +447,7 @@
 .resp_nav {
     display: block;
     height: calc(100vh - 108px);
+    width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     padding: 6px 12px 15px 12px;
@@ -643,7 +644,7 @@ display: none;
 
 .resp_sub_menu {
     height: calc(100vh - 118px);
-    width: calc(100vw - 30px);
+    width: calc(100vw - 20px);
     overflow-x: hidden;
     overflow-y: auto;    
     position: absolute;
@@ -1525,10 +1526,10 @@ display: none;
     background: #fff;
 }
 
-/*.z_parent.active {
+.z_parent.active {
     position: relative;
     z-index: 15;
-}*/
+}
 
 /*-- /Header --*/
 
@@ -2022,6 +2023,20 @@ display: none;
 }
 
 /*-- /Section 18 - Main Page --*/
+
+.custom_select_2.active .custom_dr_2 {
+    position: fixed;
+    width: calc(100% - 16px);
+    top: auto;
+    bottom: 8px !important;
+    left: 8px !important;
+    right: auto !important;
+    z-index: 12;
+}
+
+.custom_select.active .custom_dr.valute_dr {
+    width: calc(100% - 16px);
+}
 
 }
 
